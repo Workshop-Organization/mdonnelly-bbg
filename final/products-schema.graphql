@@ -140,16 +140,6 @@ type Review @key(fields: "id") {
 }
 
 """
-A Review for a product.
-"""
-type Review @key(fields: "id") {
-  id: Int!
-  body: String!
-  product: Product!
-  user: User!
-}
-
-"""
 A Subscription for whenever a new review has been added.
 """
 type Subscription {
